@@ -1,0 +1,9 @@
+<div class="container">
+    <h3>LISTA DE PESSOAS: Componente pai</h3>
+    <ul>
+        <li *ngFor="let pessoa of pessoas" >
+             <a (click)="onDetails(pessoa)">{{pessoa.nome}} </a>
+        </li>
+    </ul>
+</div>
+<app-filho [pessoaFilho]="pessoaPai" ></app-filho>
