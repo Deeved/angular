@@ -12,6 +12,14 @@ import { pt_BR } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import pt from '@angular/common/locales/pt';
 
+// import nz zorro
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzInputModule } from 'ng-zorro-antd/input';
+
 registerLocaleData(pt);
 
 @NgModule({
@@ -24,7 +32,17 @@ registerLocaleData(pt);
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    //import nz zorro
+    NzButtonModule,
+    NzIconModule,
+    NzTypographyModule,
+    NzLayoutModule,
+    NzGridModule,
+    NzInputModule
+
+
   ],
   providers: [{ provide: NZ_I18N, useValue: pt_BR }],
   bootstrap: [AppComponent]

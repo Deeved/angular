@@ -1,0 +1,15 @@
+nz-layout {
+    height: 100%;
+}
+
+nz-header {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nz-content {
+    margin: 16px;
+    text-align: center;
+}
