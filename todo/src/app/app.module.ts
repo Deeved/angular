@@ -19,6 +19,8 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzListModule } from 'ng-zorro-antd/list';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 
 registerLocaleData(pt);
 
@@ -40,7 +42,9 @@ registerLocaleData(pt);
     NzTypographyModule,
     NzLayoutModule,
     NzGridModule,
-    NzInputModule
+    NzInputModule,
+    NzListModule,
+    NzCheckboxModule
 
 
   ],

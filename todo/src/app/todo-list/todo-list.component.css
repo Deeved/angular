@@ -1,3 +1,7 @@
+div.ant-row {
+    margin: 16px 0;
+}
+
 input{
     height: 50px;
 }
