@@ -44,7 +44,8 @@ registerLocaleData(pt);
     NzGridModule,
     NzInputModule,
     NzListModule,
-    NzCheckboxModule
+    NzCheckboxModule,
+    
 
 
   ],
