@@ -1,0 +1,50 @@
+<div class="container">
+    <h3>FORMULÁRIO</h3>
+    <hr>
+    <form [formGroup]="formulario">
+      <div class="row">
+        <div class="form-group col-4">
+          <label for="cep">CEP:</label>
+          <input type="text" class="form-control" id="cep" formControlName="cep" (blur)="getEndereco()">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="form-group col-5">
+          <label for="rua">RUA: </label>
+          <input type="text" class="form-control" id="rua" formControlName="rua" readonly >
+        </div>
+    
+        <div class="form-group col-3">
+          <label for="numero">NÚMERO: </label>
+          <input type="text" class="form-control" id="numero" formControlName="numero" [readonly]=isReadonly>
+        </div>
+  
+        <div class="form-group col-4">
+          <label for="bairro">BAIRRO: </label>
+          <input type="text" class="form-control" id="bairro" formControlName="bairro" readonly>
+        </div>
+  
+      </div>
+  
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="complemento">COMPLEMENTO: </label>
+          <input type="text" class="form-control" id="complemento" formControlName="complemento" [readonly]=isReadonly>
+        </div>
+  
+        <div class="form-group col-4">
+          <label for="cidade">CIDADE: </label>
+          <input type="text" class="form-control" id="cidade" formControlName="cidade" readonly>
+        </div>
+  
+        <div class="form-group col-2">
+          <label for="uf">UF: </label>
+          <input type="text" class="form-control" id="uf" formControlName="uf" readonly>
+        </div>
+  
+      </div>
+    </form>
+  
+  </div>
+ 
