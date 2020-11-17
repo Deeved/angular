@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { TodoService } from '../todo.service'
 import { Todo } from '../todo'
 
@@ -7,7 +7,7 @@ import { Todo } from '../todo'
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
-export class TodoListComponent implements OnInit {
+export class TodoListComponent implements OnInit, OnChanges {
   
   todoName
   todos: Todo[] = []
@@ -18,6 +18,10 @@ export class TodoListComponent implements OnInit {
     this.getTodos()
   }
 
+  ngOnChanges(){
+
+  }
+
   addTodo(){
     if(!this.todoName) {
       window.alert('Tarefa em branco')
@@ -26,12 +30,13 @@ export class TodoListComponent implements OnInit {
 
     this.todoService.addTodo(this.todoName)
     this.todoName = ''
-    this.getTodos()
+    
+    this.updateTodosView()
   }
 
   deleteTodo(id){
     this.todoService.deleteTodo(id)
-    this.getTodos()
+    this.updateTodosView()
   }
 
   getTodos(){
@@ -39,4 +44,7 @@ export class TodoListComponent implements OnInit {
     .subscribe(todos=>this.todos = todos)
   }
   
+  updateTodosView(){
+    setTimeout(()=>{this.getTodos()}, 500)
+  }
 }

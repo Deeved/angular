@@ -1,7 +1,7 @@
 <div nz-row nzJustify="center" > 
     <div nz-col nzSpan="12">
         <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-            <input type="text" nz-input placeholder="Nome da Tarefa" [(ngModel)]="todoName" (keyup.enter)="addTodo()"/>
+            <input type="text" class="input-todo" nz-input placeholder="Nome da Tarefa" [(ngModel)]="todoName" (keyup.enter)="addTodo()"/>
         </nz-input-group>
         <ng-template #suffixIconButton>
             <button nz-button nzType="primary" nzSearch (click)="addTodo()"><i nz-icon nzType="plus-circle"></i></button>
