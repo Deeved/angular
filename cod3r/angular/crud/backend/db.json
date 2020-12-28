@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook Acer Aspire",
+      "price": 2100
+    },
+    {
+      "name": "lapis",
+      "price": "0.98",
+      "id": 3
+    }
+  ]
+}

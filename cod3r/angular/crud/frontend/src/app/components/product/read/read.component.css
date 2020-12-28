@@ -1,0 +1,16 @@
+.full-width-table{
+    margin-top: 32px;
+    width: 100%;
+}
+
+i {
+    margin: 0 8px;
+}
+
+i.edit {
+    color: #d9cd26;
+}
+
+i.delete {
+    color: #e35e6b;
+}
